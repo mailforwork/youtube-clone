@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Sidebar from "./Sidebar";
+import Videos from "./Videos";
 
 const Feed = () => {
   return (
@@ -21,6 +22,13 @@ const Feed = () => {
         >
           Copyright @Gihtub 2023
         </Typography>
+      </Box>
+
+      <Box>
+        <Typography variant="h4" fontWeight="bold" mb={2} sx={{ color: "white" }}>
+           <span style={{ color: "#FC1503" }}>Videos</span>
+        </Typography>
+        <Videos />
       </Box>
     </Stack>
   );
