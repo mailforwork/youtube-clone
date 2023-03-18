@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 import { useParams } from "react-router-dom";
 import { Videos } from "./";
 
-const Feed = () => {
+const SearchFeed = () => {
   // const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos, setVideos] = useState(null);
   const { searchTerm } = useParams();
@@ -34,4 +34,4 @@ const Feed = () => {
   );
 };
 
-export default Feed;
+export default SearchFeed;
